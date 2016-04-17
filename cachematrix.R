@@ -26,8 +26,9 @@ makeCacheMatrix <- function(x = matrix())
 cacheSolve <- function(x, ...) 
 {
   ## Return a matrix that is the inverse of 'x'
-  m <- x$getMatrix() # Accessing the variable x that is in the global environment (as opposed to the calling environment)
+  m <- x$getMatrix() 
   
+  # Accessing the variable x that is in the global environment (as opposed to the calling environment)
   if(!is.null(m))
   {
     message("getting cached data")
